@@ -9,7 +9,7 @@ function App() {
 
   const storeCookie = async () => {
     try {
-      await axios.post("http://localhost:8081/new", {
+      await axios.post("https://cookie-test-server.herokuapp.com/new", {
         name: input.current.value
       },
         { withCredentials: true }
@@ -22,7 +22,7 @@ function App() {
 
   const getCookie = async () => {
     try {
-      const { data } = await axios.get("http://localhost:8081/name", { withCredentials: true });
+      const { data } = await axios.get("https://cookie-test-server.herokuapp.com/name", { withCredentials: true });
       setName(data.msg.name);
       const msg = data.msg.name
       setName(msg);
