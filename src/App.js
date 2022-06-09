@@ -9,7 +9,7 @@ function App() {
 
   const storeCookie = async () => {
     try {
-      const { data } = await axios.post("http://localhost:8081/new", {
+      await axios.post("http://localhost:8081/new", {
         name: input.current.value
       },
         { withCredentials: true }
