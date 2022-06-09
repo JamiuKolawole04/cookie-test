@@ -1,0 +1,49 @@
+ .App {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 80vh;
+ }
+
+ .form {
+   background-color: rgb(172, 102, 172);
+   height: 28%;
+   padding: 20px;
+   width: 20%;
+   border-radius: 10px;
+   /* height: 200px; */
+ }
+
+ label {
+   color: rgb(241, 238, 234);
+   display: block;
+ }
+
+ input {
+   border-radius: 2px;
+   height: 20px;
+   border: none;
+   outline: none;
+ }
+
+ button {
+   background-color: burlywood;
+   border: 1px solid wheat;
+   height: 30px;
+   cursor: pointer;
+ }
+
+ input,
+ button,
+ label {
+   display: block;
+   width: fit-content;
+   margin: auto;
+   margin-top: 10px;
+ }
+
+ h2 {
+   color: black;
+
+   font-size: 1.2rem;
+ }
